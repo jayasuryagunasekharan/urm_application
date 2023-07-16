@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Log In</h1>
+            <nav>
+                <div class="call-to-action">
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Homepage Content -->
+        <section id="loginpage">
+            <div class="tile-container">
+                <article class="style1">
+                    <span class="image">
+                        <h3 class="text">Candidate</h3>
+                        <img src="/static/images/pic02.jpg" alt="" />
+                    </span>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <form action="login_candidate.php" method="POST">
+                                <label for="username_candidate">Email:</label>
+                                <input type="email" id="username_candidate" name="username_candidate" required>
+
+                                <label for="password_candidate">Password:</label>
+                                <input type="password" id="password_candidate" name="password_candidate" required>
+
+                                <input type="submit" value="Log In" class="cta-button">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="style1">
+                    <span class="image">
+                        <h3 class="text">Institute</h3>
+                        <img src="/static/images/pic01.jpg" alt="" />
+                    </span>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <form action="login_institute.php" method="POST">
+                                <label for="username_institute">Email:</label>
+                                <input type="email" id="username_institute" name="username_institute" required>
+
+                                <label for="password_institute">Password:</label>
+                                <input type="password" id="password_institute" name="password_institute" required>
+
+                                <input type="submit" value="Log In" class="cta-button">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="style1">
+                    <span class="image">
+                        <h3 class="text">Recruiter</h3>
+                        <img src="/static/images/pic03.jpg" alt="" />
+                    </span>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <form action="login_recruiter.php" method="POST">
+                                <label for="username_recruiter">Email:</label>
+                                <input type="email" id="username_recruiter" name="username_recruiter" required>
+
+                                <label for="password_recruiter">Password:</label>
+                                <input type="password" id="password_recruiter" name="password_recruiter" required>
+
+                                <input type="submit" value="Log In" class="cta-button">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="style1">
+                    <span class="image">
+                        <h3 class="text">Officer</h3>
+                        <img src="/static/images/pic04.jpg" alt="" />
+                    </span>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <form action="login_officer.php" method="POST">
+                                <label for="username_officer">Email:</label>
+                                <input type="email" id="username_officer" name="username_officer" required>
+
+                                <label for="password_officer">Password:</label>
+                                <input type="password" id="password_officer" name="password_officer" required>
+
+                                <input type="submit" value="Log In" class="cta-button">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 URM Application. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
