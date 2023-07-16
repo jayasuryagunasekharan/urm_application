@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/register_candidate.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Candidate Registration</h1>
+            <nav>
+                <div class="call-to-action">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register_candidate.html">Candidate</a></li>
+                        <li><a href="register_institution.html">Institution</a></li>
+                        <li><a href="register_recruiter.html">Recruiter</a></li>
+                        <li><a href="register_officer.html">Officer</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Candidate Registration Content -->
+        <section id="registerpage">
+            <div class="overlay">
+                <div class="content">
+                    <div id="candidateForm">
+                        <form action="register_candidate.php" method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="demographic">Demographic Information:</label>
+                            <input type="text" id="demographic" name="demographic">
+
+                            <label for="field">Field of Study:</label>
+                            <input type="text" id="field" name="field">
+
+                            <label for="education">Educational Background:</label>
+                            <input type="text" id="education" name="education">
+
+                            <label for="experience">Research Experience:</label>
+                            <input type="text" id="experience" name="experience">
+
+                            <label for="resume">Resume/CV:</label>
+                            <input type="file" id="resume" name="resume">
+
+                            <label for="personalStatement">Personal Statement/Cover Letter:</label>
+                            <textarea id="personalStatement" name="personalStatement"></textarea>
+
+                            <input type="submit" value="Register" class="cta-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 URM Application. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
