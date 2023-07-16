@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Candidate Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/candidate_dashboard.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Adjust header styles */
+        header {
+            background-color: rgba(0, 74, 153, 0.8);
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Adjust main styles */
+        main {
+            margin-top: 80px;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        /* Adjust footer styles */
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        /* Add spacing between elements */
+        .tile {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .search,
+        .filters {
+            margin-bottom: 20px;
+        }
+
+        .job-posting {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .job-actions button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .job-actions button:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Candidate Dashboard</h1>
+            <nav>
+                <div class="call-to-action">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="candidate_profile.html">Profile</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Candidate Dashboard Content -->
+        <section id="profile" class="tile">
+            <div class="search">
+                <input type="text" placeholder="Search by name, field of study, or institution">
+                <button>Search</button>
+            </div>
+
+            <div class="filters">
+                <!-- Add filters for field, location, interest, job type, etc. -->
+                <!-- Example filter: Field of Study -->
+                <label for="field">Field of Study:</label>
+                <select id="field">
+                    <option value="all">All</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="chemistry">Chemistry</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <!-- Add more filters as needed -->
+
+                <!-- Example filter: Job Type -->
+                <label for="job-type">Job Type:</label>
+                <select id="job-type">
+                    <option value="all">All</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="candidate-list">
+                <!-- Display list of available job postings here -->
+                <div class="job-posting">
+                    <div class="job-info">
+                        <h2>Job Title</h2>
+                        <p>Field of Study: Computer Science</p>
+                        <p>Location: City, Country</p>
+                        <p>Job Type: Full-time</p>
+                        <!-- Add more job details as needed -->
+                    </div>
+                    <div class="job-actions">
+                        <button>Apply</button>
+                        <button>Save</button>
+                    </div>
+                </div>
+
+                <div class="job-posting">
+                    <div class="job-info">
+                        <h2>Job Title</h2>
+                        <p>Field of Study: Chemistry</p>
+                        <p>Location: City, Country</p>
+                        <p>Job Type: Part-time</p>
+                        <!-- Add more job details as needed -->
+                    </div>
+                    <div class="job-actions">
+                        <button>Apply</button>
+                        <button>Save</button>
+                    </div>
+                </div>
+
+                <!-- Add more job postings as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 URM Application. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
