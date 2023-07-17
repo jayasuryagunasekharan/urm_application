@@ -113,9 +113,10 @@ main {
 }
 
 .style1 {
-    width: calc(50% - 10px);
+    width: 30%;
+    height: 30%;
     /* Adjust the width as needed */
-    background-color: #fff;
+    background-color: #9e9e9e;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -123,28 +124,11 @@ main {
 
 
 /* Article Styles */
-
 article {
     width: 300px;
     margin: 20px;
     position: relative;
     overflow: hidden;
-}
-
-article .image {
-    position: relative;
-    overflow: hidden;
-}
-
-article img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-article:hover img {
-    transform: scale(1.1);
 }
 
 article .overlay {
@@ -167,29 +151,49 @@ article:hover .overlay {
     opacity: 1;
 }
 
-article h2 {
-    color: #fff;
+article h2,
+p {
+    margin: 0;
+    color: #000000;
     text-align: center;
-    margin: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-article p {
-    color: #fff;
-    text-align: center;
-    margin: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+/* Graph Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-article:hover p {
-    opacity: 1;
+.graph-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+.graph-info {
+    text-align: center;
+}
+
+.graph-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.count {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.graph {
+    text-align: center;
+}
+
+.graph img {
+    max-width: 50%;
+    height: auto;
+}
+
 
 
 /* Footer Styles */
