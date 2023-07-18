@@ -19,9 +19,11 @@
                         <li><a href="candidate_dashboard.html">Dashboard</a></li>
                         <li><a href="candidate_jobsearch.html">Jobs</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="chat.html">Chat</a></li> <!-- Add the Chat link here -->
                     </ul>
                 </div>
             </nav>
+
         </div>
     </header>
 
@@ -30,6 +32,10 @@
         <!-- Candidate Profile Content -->
         <section id="profile" class="tile">
             <form action="candidate_profile.php" method="POST">
+
+                <div class="profile-image">
+                    <span class="image fit"><img src="/static/images/surya.jpg" alt="" /></span>
+                </div>
                 <div class="profile-info content">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name">
@@ -79,6 +85,9 @@
 
                     <label for="cv">CV:</label>
                     <input type="file" id="cv" name="cv">
+
+                    <label for="academic_records">Academic Records:</label>
+                    <input type="file" id="academic_records" name="academic_records">
                 </div>
                 <div class="profile-actions">
                     <button type="submit">Save Profile</button>
