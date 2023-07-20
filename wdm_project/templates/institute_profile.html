@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Institute Profile</title>
+    <link rel="stylesheet" type="text/css" href="/wdm_project/static/css/institute_profile.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Institute Profile</h1>
+            <nav>
+                <div class="call-to-action">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="institute_about.html">About</a></li>
+                        <li><a href="institute_dashboard.html">Dashboard</a></li>
+                        <li><a href="institute_jobposted.html">Jobs</a></li>
+                        <li><a href="institute_application_status.html">Application Status</a></li>
+                        <li><a href="institute_candidates_interested.html">Candidates Interested</a></li>
+                        <li><a href="institute_recruiter.html">Recruiters</a></li>
+                        <li><a href="institute_faculty.html">Faculty</a></li>
+                        <li><a href="institute_research.html">Research</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Candidate Profile Content -->
+        <section id="profile" class="tile">
+            <form action="institute_edit_profile.php" method="POST">
+                <div class="profile-image">
+                    <span class="image fit"><img src="/wdm_project/static/images/uta_logo.png" alt="" /></span>
+                </div>
+                <div class="profile-info content">
+                    <div class="detail">
+                        <h3>Name:</h3>
+                        <p>University of Texas At Arlington</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Email:</h3>
+                        <p>UTA@UTA.edu</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Password:</h3>
+                        <p>*********</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Address:</h3>
+                        <p>Arlington, Texas</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Phone Number:</h3>
+                        <p>6235612348</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Research focus:</h3>
+                        <p>Arts and Humanities<br>Technology</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <a href="institute_edit_profile.html">Edit Profile</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023 URM Application. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
