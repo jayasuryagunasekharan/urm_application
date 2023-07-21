@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Activity</title>
+    <link rel="stylesheet" href="/wdm_project/static/css/admin.css">
+    <link rel="stylesheet" href="/wdm_project/static/css/chat_dashboard.css">
+</head>
+
+<body style="background-color: #222;">
+
+    <!--nav bar-->
+
+    <div class="admin">
+        <nav>
+            <p class="Dashboard">User Activity</p>
+            <input type="text" placeholder="Search here..." class="search">
+            <div>
+                <img src="/wdm_project/static/images/1024px-Search_Icon.svg.png" class="search-image" alt="">
+            </div>
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><button id="generateReport">Generate Report</button></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+            <img src="/wdm_project/static/images/surya.jpg" class="user-pic" onclick="toggleMenu()" alt="">
+        </nav>
+    </div>
+
+    <!--start-->
+    <div class="stat">
+        <div class="image1" onclick="window.open('admin_candidates.html');">
+            <img src="/wdm_project/static/images/bar icon.png" class="bar-icon" alt="">
+            <p class="number1">1000</p>
+            <p class="candidates">Logged In Users</p>
+        </div>
+
+        <div class="image1" onclick="window.open('admin_candidates.html');">
+            <img src="/wdm_project/static/images/bar icon.png" class="bar-icon" alt="">
+            <p class="number1">547</p>
+            <p class="candidates">Logged Out Users</p>
+        </div>
+
+        <div class="image1" onclick="window.open('admin_troubleshoot.html');">
+            <img src="/wdm_project/static/images/ins.png" class="bar-icon" alt="">
+            <p class="number1">10</p>
+            <p class="candidates">Issues Raised</p>
+        </div>
+    </div>
+
+
+    <!--Hidden Menu JS-->
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+
+
+    </script>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/wdm_project/static/js/responses.js"></script>
+<script src="/wdm_project/static/js/chat_dashboard.js"></script>
+
+</html>
