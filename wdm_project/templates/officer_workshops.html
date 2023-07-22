@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Workshops</title>
+	<link rel="stylesheet" href="/wdm_project/static/css/base.css">
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body style="background-color: #222;">
+
+	<!--nav bar-->
+
+	<div class="admin">
+		<nav>
+			<p class="Dashboard">Workshops</p>
+			<div class="search-container">
+				<input type="text" placeholder="Search here..." class="search">
+				<i class="fa fa-search search-icon" aria-hidden="true"></i>
+			</div>
+			<ul>
+				<li><a href="officer_dashboard.html">Dashboard</a></li>
+				<li><a href="officer_about.html">About</a></li>
+				<li><a href="officer_job_approval.html">Approve Jobs</a></li>
+				<li><a href="officer_workshops.html">Workshops</a></li>
+				<li><a href="officer_policy_review.html">Policy Review</a></li>
+				<li><a href="chat.html">Chat</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!--End of Nav bar-->
+
+	<!--Begin Diversity Matrics Content-->
+
+	<!--You can add your specific Diversity Matrics content here. For example: -->
+	<center>
+		<div id="diversity-metrics-content">
+			<p class="page-title">Workshops</p>
+		</div>
+	</center>
+	<!-- Candidate Statistica start-->
+	<center>
+		<div class="card-container">
+			<div class="card-stats">
+				<div class="card-content">
+					<h3 class="card-title">Total Workshops</h3>
+					<p class="card-text">300</p>
+				</div>
+			</div>
+			<div class="card-stats">
+				<div class="card-content">
+					<h3 class="card-title">Upcoming Workshops</h3>
+					<p class="card-text">4</p>
+				</div>
+			</div>
+			<div class="card-stats card-button ">
+				<div class="card-content">
+					<h3 class="card-title">New Workshop</h3>
+					<br>
+					<a href="officer_add_workshop.html" class="card-button-link"><i class="fas fa-plus"></i>Add New
+						Workshop</a>
+				</div>
+			</div>
+		</div>
+	</center>
+	<!-- Candidate Statistica End-->
+	<!-- Upcoming workshops Start-->
+	<p class="page-sub-title">Upcoming Workshops</p>
+	<div class="card-container">
+		<div class="full-card">
+			<div class="card-content">
+				<table class="data-table">
+					<thead>
+						<tr>
+							<th>Date and Time</th>
+							<th>Leader</th>
+							<th>Location</th>
+							<th>Topic</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2023-08-15 10:00 AM</td>
+							<td>John Doe</td>
+							<td>Conference Room A</td>
+							<td>Introduction to Diversity</td>
+							<td>Upcoming</td>
+						</tr>
+						<tr>
+							<td>2023-08-20 2:30 PM</td>
+							<td>Jane Smith</td>
+							<td>Training Hall B</td>
+							<td>Women Emporment</td>
+							<td>Upcoming</td>
+						</tr>
+						<tr>
+							<td>2023-08-25 9:00 AM</td>
+							<td>Mike Johnson</td>
+							<td>Boardroom C</td>
+							<td>underrepresented minority power</td>
+							<td>Upcoming</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Upcoming workshops End-->
+	<!-- Total workshops Start-->
+	<p class="page-sub-title">All Workshops</p>
+	<div class="card-container">
+		<div class="full-card">
+			<div class="card-content">
+				<table class="data-table">
+					<thead>
+						<tr>
+							<th>Date and Time</th>
+							<th>Leader</th>
+							<th>Location</th>
+							<th>Topic</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2023-08-15 10:00 AM</td>
+							<td>John Doe</td>
+							<td>Conference Room A</td>
+							<td>underrepresented minority power</td>
+							<td>Completed</td>
+						</tr>
+						<tr>
+							<td>2023-08-20 2:30 PM</td>
+							<td>Jane Smith</td>
+							<td>Training Hall B</td>
+							<td>Career Focus for all</td>
+							<td>Upcoming</td>
+						</tr>
+						<tr>
+							<td>2023-08-25 9:00 AM</td>
+							<td>Mike Johnson</td>
+							<td>Boardroom C</td>
+							<td>Introduction to Diversity</td>
+							<td>Cancelled</td>
+						</tr>
+						<tr>
+							<td>2023-08-25 9:00 AM</td>
+							<td>Mike Johnson</td>
+							<td>Boardroom C</td>
+							<td>Professional Life</td>
+							<td>Cancelled</td>
+						</tr>
+						<tr>
+							<td>2023-08-20 2:30 PM</td>
+							<td>Jane Smith</td>
+							<td>Training Hall B</td>
+							<td>Coming Soon...</td>
+							<td>Upcoming</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Upcoming workshops End-->
+	<script src="/wdm_project/static/js/navbar.js"></script>
+</body>
+
+</html>
