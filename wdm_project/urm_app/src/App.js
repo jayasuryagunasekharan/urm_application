@@ -1,98 +1,59 @@
+import logo from './logo.svg';
 import './App.css';
+import Index from './pages/Index';
+import About from './pages/About';
+import Services from './pages/Services';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import CandidateRegister from './pages/CandidateRegister';
+import InstituteRegister from './pages/InstituteRegister';
+import RecruiterRegister from './pages/RecruiterRegister';
+import OfficerRegister from './pages/OfficerRegister';
+import AdminRegister from './pages/AdminRegister';
+import Contact from './pages/Contact';
+import Roles from './pages/Roles';
+import Feedback from './pages/Feedback';
+import ForgotPassword from './pages/ForgotPassword';
+import CandidateDashboard from './pages/CandidateDashboard';
+import CandidateJobApplied from './pages/CandidateJobApplied';
+import CandidateJobSearch from './pages/CandidateJobSearch';
+import CandidateJobSaved from './pages/CandidateJobSaved';
+import CandidateProfile from './pages/CandidateProfile';
+import CandidateChat from './pages/CandidateChat';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <header>
-        <div className="header-container">
-          <h1>URM Application</h1>
-          <nav>
-            <div className="call-to-action">
-              <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">SignUp</a></li>
-                <li><a href="roles.html">Roles</a></li>
-                <li><a href="https://fascinating-jayasuryaguna.wordpress.com/">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+    <div className="App">
+      <Router>
+        <Routes>
+          {/* Home Routes */}
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/candidate_register" element={<CandidateRegister />} />
+          <Route path="/institute_register" element={<InstituteRegister />} />
+          <Route path="/recruiter_register" element={<RecruiterRegister />} />
+          <Route path="/officer_register" element={<OfficerRegister />} />
+          <Route path="/admin_register" element={<AdminRegister />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/roles" element={<Roles />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/forgot_password" element={<ForgotPassword />} />
 
-      <main>
-        {/* Homepage Content */}
-        <section id="homepage">
-          <h2>Homepage</h2>
-          <p>The URM Application project aims to address the underrepresentation of underrepresented minority (URM)
-            candidates in academia by providing a platform that connects academia, URM candidates, diversity,
-            equity, and inclusion (DEI) officers, and recruiters. The website serves as a centralized platform that
-            facilitates communication, job search, and matching processes. This report provides an in-depth
-            understanding of the project, focusing on the entity relationship diagram (ERD) and the system's
-            functionality.
-          </p>
-        </section>
-
-        {/* Goal Content */}
-        <section id="goal">
-          <h2>Your SUCCESS story is next</h2>
-          <div className="tile-container">
-            <article className="style1">
-              <span className="image">
-                <h3 className="text">Surya</h3>
-                {/* <img src="/wdm_project/static/images/surya.jpg" alt="" /> */}
-              </span>
-              <div className="overlay">
-                <div className="content">
-                  <p className="details">Luffy</p>
-                </div>
-              </div>
-            </article>
-            <article class="style1">
-              <span class="image">
-                <h3 class="text">Sankalp</h3>
-                <img src="/wdm_project/static/images/uta_logo.png" alt="" />
-              </span>
-              <div class="overlay">
-
-                <div class="content">
-                  <p>Zoro</p>
-                </div>
-              </div>
-            </article>
-            <article class="style1">
-              <span class="image">
-                <h3 class="text">Shaunak</h3>
-                <img src="/wdm_project/static/images/uta_logo.png" alt="" />
-              </span>
-              <div class="overlay">
-
-                <div class="content">
-                  <p>Brook</p>
-                </div>
-              </div>
-            </article>
-            <article class="style1">
-              <span class="image">
-                <h3 class="text">Aditya</h3>
-                <img src="/wdm_project/static/images/uta_logo.png" alt="" />
-              </span>
-              <div class="overlay">
-
-                <div class="content">
-                  <p>Sanji</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2023 URM Application. All rights reserved.</p>
-      </footer>
+          {/* Candidate Routes */}
+          <Route path="/candidate_dashboard" element={<CandidateDashboard />} />
+          <Route path="/candidate_jobsearch" element={<CandidateJobSearch />} />
+          <Route path="/candidate_jobapplied" element={<CandidateJobApplied />} />
+          <Route path="/candidate_jobsaved" element={<CandidateJobSaved />} />
+          <Route path="/candidate_profile" element={<CandidateProfile />} />
+          <Route path="/candidate_chat" element={<CandidateChat />} />
+        </Routes>
+      </Router>
+      {/* <Index />
+      <Contact /> */}
     </div>
   );
 }
