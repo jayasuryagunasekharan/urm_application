@@ -12,6 +12,7 @@ function CandidateJobSearch() {
                 <div className="header-container">
                     <h1>Candidate Job Search</h1>
                     <CandidateHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 

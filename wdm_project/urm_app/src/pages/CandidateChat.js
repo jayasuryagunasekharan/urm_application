@@ -10,8 +10,9 @@ function CandidateChat() {
 
             <header>
                 <div className="header-container">
-                    <h1>Candidate Dashboard</h1>
+                    <h1>Chat</h1>
                     <CandidateHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 

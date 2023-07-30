@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Index() {
     return (
         <Fragment>
@@ -14,8 +13,10 @@ function Index() {
                         <li><Link to="/login" >Login</Link></li>
                         <li><Link to="/register" >SignUp</Link></li>
                         <li><Link to="/roles" >Roles</Link></li>
-                        <li><Link to="https://fascinating-jayasuryaguna.wordpress.com/" >Blog</Link></li>
+                        <li><Link to="/blog" >Blog</Link></li>
                         <li><Link to="/feedback" >Feedback</Link></li>
+
+                        <li><Link to="/troubleshoot" >Help and Support</Link></li>
                         <li><Link to="/contact" >Contact</Link></li>
                     </ul>
                 </div>

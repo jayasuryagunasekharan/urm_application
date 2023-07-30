@@ -12,11 +12,11 @@ function Roles() {
                 <div className="header-container">
                     <h1>URM Application</h1>
                     <IndexHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 
             <main>
-
                 {/* <!-- Roles Content --> */}
                 <section id="goal">
                     <div className="tile-container">
@@ -32,49 +32,50 @@ function Roles() {
                             </div>
                         </article>
 
-
                         <article className="style1">
                             <span className="image">
-                                <img src="assets/images/uta_logo.png" alt="" />
+                                <img src="assets/images/ins.png" alt="" />
                             </span>
                             <div className="overlay">
 
                                 <div className="content">
-                                    <p><a href="institute_dashboard.html">Institute</a></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="style1">
-                            <span className="image">
-                                <img src="assets/images/uta_logo.png" alt="" />
-                            </span>
-                            <div className="overlay">
-
-                                <div className="content">
-                                    <p><a href="recruiter_dashboard.html">Recruiter</a></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="style1">
-                            <span className="image">
-                                <img src="assets/images/uta_logo.png" alt="" />
-                            </span>
-                            <div className="overlay">
-
-                                <div className="content">
-                                    <p><a href="officer_dashboard.html">DEI Officer</a></p>
+                                    <p className="details"><Link to="/institute_dashboard">Institute</Link></p>
                                 </div>
                             </div>
                         </article>
 
                         <article className="style1">
                             <span className="image">
-                                <img src="assets/images/uta_logo.png" alt="" />
+                                <img src="assets/images/add-friend.jpg" alt="" />
                             </span>
                             <div className="overlay">
 
                                 <div className="content">
-                                    <p><a href="admin_dashboard.html">Admin</a></p>
+                                    <p className="details"><Link to="/recruiter_dashboard">Recruiter</Link></p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article className="style1">
+                            <span className="image">
+                                <img src="assets/images/dei.jpg" alt="" />
+                            </span>
+                            <div className="overlay">
+
+                                <div className="content">
+                                    <p className="details"><Link to="/officer_dashboard">DEI Officer</Link></p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article className="style1">
+                            <span className="image">
+                                <img src="assets/images/admin.png" alt="" />
+                            </span>
+                            <div className="overlay">
+
+                                <div className="content">
+                                    <p className="details"><Link to="/admin_dashboard">Admin</Link></p>
                                 </div>
                             </div>
                         </article>

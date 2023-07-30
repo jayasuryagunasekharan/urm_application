@@ -12,6 +12,7 @@ function ForgotPassword() {
                 <div className="header-container">
                     <h1>Reset Password</h1>
                     <IndexHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 

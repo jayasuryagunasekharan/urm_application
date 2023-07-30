@@ -11,6 +11,7 @@ function OfficerRegister() {
                 <div className="header-container">
                     <h1>Register</h1>
                     <RegisterHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 

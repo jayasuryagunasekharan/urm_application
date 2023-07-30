@@ -12,6 +12,7 @@ function CandidateJobApplied() {
                 <div className="header-container">
                     <h1>Candidate Job Applied</h1>
                     <CandidateHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 

@@ -12,6 +12,7 @@ function Login() {
                 <div className="header-container">
                     <h1>URM Application</h1>
                     <IndexHeader />
+                    <img src="assets/images/surya.jpg" className="user-pic" alt=""></img>
                 </div>
             </header>
 
